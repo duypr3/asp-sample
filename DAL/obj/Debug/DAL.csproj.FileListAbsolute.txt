@@ -1,0 +1,12 @@
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\DAL.dll.config
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\DAL.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\DAL.pdb
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\Entity.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\EntityFramework.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\Entity.pdb
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\EntityFramework.xml
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\obj\Debug\DAL.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\obj\Debug\DAL.pdb

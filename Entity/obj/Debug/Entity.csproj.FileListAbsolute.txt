@@ -1,0 +1,12 @@
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\bin\Debug\Entity.dll.config
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\bin\Debug\Entity.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\bin\Debug\Entity.pdb
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\bin\Debug\EntityFramework.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\bin\Debug\EntityFramework.xml
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.pdb
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.Migrations._02Jan2017_Default.resources
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.csproj.GenerateResource.Cache

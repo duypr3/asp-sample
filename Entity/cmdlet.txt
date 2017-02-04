@@ -1,0 +1,31 @@
+﻿
+/////============= UPDATE DATABASE ==================/////
+
+Open "Tools->NuGet Package Manager->Package Manager Console"
+select project "Entities"
+run "install-package entityframework"
+create Entity with Code First
+
+* run "Enable-Migrations"
+
+ - Enable-Migrations -ContextTypeName DefaultDbContext
+
+ - Copy "internal sealed class DefaultConfiguration" and paste new class, rename then "DataMiningConfiguration"
+
+
+* Open file "Migrations/configurations.cs"  -> Change "AutomaticMigrationsEnabled" to "true";
+
+
+* run "Add-Migration"
+
+ - Add-migration -ConfigurationTypeName DefaultConfiguration
+
+ - Add-migration -ConfigurationTypeName DataMiningConfiguration
+
+
+
+* run "Update-Database"
+
+Update-Database -ConfigurationTypeName DefaultConfiguration -force
+
+Update-Database -ConfigurationTypeName DataMiningConfiguration -force

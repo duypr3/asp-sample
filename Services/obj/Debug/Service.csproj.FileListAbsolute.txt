@@ -1,0 +1,11 @@
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\Services.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\Services.pdb
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\obj\Debug\Services.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\obj\Debug\Services.pdb
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\DAL.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\EntityFramework.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\Entity.dll
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\DAL.pdb
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\EntityFramework.xml
+C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\Entity.pdb
