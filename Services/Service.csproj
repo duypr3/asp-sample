@@ -42,9 +42,11 @@
   <ItemGroup>
     <Compile Include="Implementation\BaseService.cs" />
     <Compile Include="Implementation\ClassService.cs" />
+    <Compile Include="Implementation\LoginService.cs" />
     <Compile Include="Implementation\StudentService.cs" />
     <Compile Include="Interface\IBaseService.cs" />
     <Compile Include="Interface\IClassService.cs" />
+    <Compile Include="Interface\ILoginService.cs" />
     <Compile Include="Interface\IStudentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

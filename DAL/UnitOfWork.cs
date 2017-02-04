@@ -23,6 +23,7 @@ namespace DAL
 
         private IBaseRepository<Student> _studentRepository;
         private IBaseRepository<Class> _classRepository;
+        private IBaseRepository<Login> _loginRepository;
 
         private IBaseRepository<Student> StudentRepository
         {
@@ -33,12 +34,16 @@ namespace DAL
         {
             get { return _classRepository ?? (_classRepository = new BaseRepository<Class>(_dbContext)); }
         }
-
+        private IBaseRepository<Login> LoginRepository
+        {
+            get { return _loginRepository ?? (_loginRepository = new BaseRepository<Login>(_dbContext)); }
+        }
         public IBaseRepository<T> GetRepository<T>()
         {
             var type = typeof(T);
             if (type == typeof(Student)) return StudentRepository as IBaseRepository<T>;
             else if (type == typeof(Class)) return ClassRepository as IBaseRepository<T>;
+            else if (type == typeof(Login)) return LoginRepository as IBaseRepository<T>;
 
             return null;
         }

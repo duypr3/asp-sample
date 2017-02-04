@@ -10,3 +10,15 @@ C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\EntityFramework.x
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\obj\Debug\DAL.dll
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\DAL\obj\Debug\DAL.pdb
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\DAL.dll.config
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\DAL.dll
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\DAL.pdb
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\Entity.dll
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.dll
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\Entity.pdb
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.xml
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.dll
+D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.pdb

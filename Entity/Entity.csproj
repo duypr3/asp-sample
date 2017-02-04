@@ -54,6 +54,7 @@
     <Compile Include="Default\Class.cs" />
     <Compile Include="DataMiningDbContext.cs" />
     <Compile Include="DefaultDbContext.cs" />
+    <Compile Include="Default\Login.cs" />
     <Compile Include="Default\Teacher.cs" />
     <Compile Include="Migrations\201701020420343_02Jan2017_Default.cs" />
     <Compile Include="Migrations\201701020420343_02Jan2017_Default.Designer.cs">

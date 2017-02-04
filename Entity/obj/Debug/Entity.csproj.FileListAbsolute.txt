@@ -10,3 +10,15 @@ C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.dll
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.pdb
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.Migrations._02Jan2017_Default.resources
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Entity\obj\Debug\Entity.csproj.GenerateResource.Cache
+D:\Project\GitHub\asp-sample\Entity\bin\Debug\Entity.dll.config
+D:\Project\GitHub\asp-sample\Entity\bin\Debug\Entity.dll
+D:\Project\GitHub\asp-sample\Entity\bin\Debug\Entity.pdb
+D:\Project\GitHub\asp-sample\Entity\bin\Debug\EntityFramework.dll
+D:\Project\GitHub\asp-sample\Entity\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\GitHub\asp-sample\Entity\bin\Debug\EntityFramework.xml
+D:\Project\GitHub\asp-sample\Entity\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\GitHub\asp-sample\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+D:\Project\GitHub\asp-sample\Entity\obj\Debug\Entity.Migrations._02Jan2017_Default.resources
+D:\Project\GitHub\asp-sample\Entity\obj\Debug\Entity.csproj.GenerateResource.Cache
+D:\Project\GitHub\asp-sample\Entity\obj\Debug\Entity.dll
+D:\Project\GitHub\asp-sample\Entity\obj\Debug\Entity.pdb

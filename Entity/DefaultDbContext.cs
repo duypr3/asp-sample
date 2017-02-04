@@ -1,10 +1,5 @@
 ﻿using Entity.Default;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entity
 {
@@ -13,15 +8,16 @@ namespace Entity
         public DefaultDbContext() : base("DefaultConnection")
         {
             this.Configuration.LazyLoadingEnabled = false;
+            //this.Configuration.AutoDetectChangesEnabled = false;
         }
 
         public DbSet<Student> Students { set; get; }
         public DbSet<Class> Classes { set; get; }
         public DbSet<Teacher> Teachers { set; get; }
+        public DbSet<Login> Logins { set; get; }
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-
         }
     }
 }

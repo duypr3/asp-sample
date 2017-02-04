@@ -9,3 +9,14 @@ C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\Entity.dll
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\DAL.pdb
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\EntityFramework.xml
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Services\bin\Debug\Entity.pdb
+D:\Project\GitHub\asp-sample\Services\bin\Debug\Services.dll
+D:\Project\GitHub\asp-sample\Services\bin\Debug\Services.pdb
+D:\Project\GitHub\asp-sample\Services\bin\Debug\DAL.dll
+D:\Project\GitHub\asp-sample\Services\bin\Debug\Entity.dll
+D:\Project\GitHub\asp-sample\Services\bin\Debug\EntityFramework.dll
+D:\Project\GitHub\asp-sample\Services\bin\Debug\DAL.pdb
+D:\Project\GitHub\asp-sample\Services\bin\Debug\Entity.pdb
+D:\Project\GitHub\asp-sample\Services\bin\Debug\EntityFramework.xml
+D:\Project\GitHub\asp-sample\Services\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Project\GitHub\asp-sample\Services\obj\Debug\Services.dll
+D:\Project\GitHub\asp-sample\Services\obj\Debug\Services.pdb

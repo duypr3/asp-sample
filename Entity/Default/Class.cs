@@ -8,7 +8,7 @@ namespace Entity
     {
         public Int64 ID { get; set; }
         public string Name { get; set; }
-        public string NumStudent { get; set; }
+        public int NumStudent { get; set; }
         public Int64 TeacherID { get; set; }
         public virtual Teacher Teacher { get; set; }
         public virtual ICollection<Student> Students { get; set; }

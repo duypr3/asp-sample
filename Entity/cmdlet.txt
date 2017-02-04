@@ -23,7 +23,6 @@ create Entity with Code First
  - Add-migration -ConfigurationTypeName DataMiningConfiguration
 
 
-
 * run "Update-Database"
 
 Update-Database -ConfigurationTypeName DefaultConfiguration -force
