@@ -1,6 +1,9 @@
 ﻿using Entity;
 using Services.Interface;
+using System.Collections;
 using System.Web.Http;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Server.Controllers
 {
@@ -13,16 +16,20 @@ namespace Server.Controllers
             _loginService = loginService;
         }
 
-        public string AddOrUpdate(string username)
+        public Login AddOrUpdate(string username, string password)
         {
             Login lg = new Login()
             {
                 Username = username,
-                Password = "123456"
+                Password = password
             };
             _loginService.Insert(lg);
 
-            return "";
+            return lg;
+        }
+        public IList<Login> GetAll()
+        {
+            return _loginService.GetAll().ToList();
         }
     }
 }

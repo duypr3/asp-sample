@@ -8,7 +8,7 @@ namespace Services.Interface
     {
         void Insert(T o);
 
-        IQueryable<T> GetAll(string s);
+        IQueryable<T> GetAll(string includeProperties = "");
 
         IQueryable<T> Get(Expression<Func<T, bool>> filter = null,
             string includeProperties = "");

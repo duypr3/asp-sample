@@ -190,3 +190,8 @@ D:\Project\GitHub\asp-sample\Server\bin\System.Web.Http.Owin.xml
 D:\Project\GitHub\asp-sample\Server\obj\Debug\WebAPI.csprojResolveAssemblyReference.cache
 D:\Project\GitHub\asp-sample\Server\obj\Debug\Server.dll
 D:\Project\GitHub\asp-sample\Server\obj\Debug\Server.pdb
+D:\Project\GitHub\asp-sample\Server\bin\Microsoft.Owin.Cors.dll
+D:\Project\GitHub\asp-sample\Server\bin\System.Web.Cors.dll
+D:\Project\GitHub\asp-sample\Server\bin\System.Web.Http.Cors.dll
+D:\Project\GitHub\asp-sample\Server\bin\Microsoft.Owin.Cors.xml
+D:\Project\GitHub\asp-sample\Server\bin\System.Web.Http.Cors.xml

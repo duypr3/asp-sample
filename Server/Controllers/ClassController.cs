@@ -11,9 +11,9 @@ namespace Server.Controllers
     public class ClassController : ApiController
     {
         private readonly IClassService _classService;
-        public ClassController(IClassService studenService)
+        public ClassController(IClassService classService)
         {
-            _classService = studenService;
+            _classService = classService;
         }
         public Class GetByID(long id)
         {
