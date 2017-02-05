@@ -16,6 +16,7 @@ namespace Server.Controllers
             _loginService = loginService;
         }
 
+        [HttpPost]
         public Login AddOrUpdate(string username, string password)
         {
             Login lg = new Login()
@@ -27,6 +28,14 @@ namespace Server.Controllers
 
             return lg;
         }
+        [HttpPost]
+        public Login AddOrUpdateV1(Login login)
+        {            
+            _loginService.Insert(login);
+
+            return login;
+        }
+        [HttpGet]
         public IList<Login> GetAll()
         {
             return _loginService.GetAll().ToList();
