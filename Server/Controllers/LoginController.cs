@@ -40,5 +40,10 @@ namespace Server.Controllers
         {
             return _loginService.GetAll().ToList();
         }
+        [HttpGet]
+        public IList<Login> GetByInfo(string username, string password)
+        {
+            return _loginService.Get(n => n.Username.ToLower().Equals(username.ToLower())).ToList();
+        }
     }
 }
