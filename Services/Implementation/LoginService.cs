@@ -11,10 +11,5 @@ namespace Services.Implementation
         {
             _loginRepo = UnitOfWork.GetRepository<Login>();
         }
-
-        public void AddOrUpdate(string username)
-        {
-            
-        }
     }
 }

@@ -11,18 +11,12 @@ namespace DAL
         #region Init
         protected DbContext _dbContext;
         protected DbSet<T> _dbSet;
-        protected bool _autoSaveChange = true;
+        
 
         public BaseRepository(DbContext dbContext)
         {
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<T>();
-        }
-        public BaseRepository(DbContext dbContext, bool autoSaveChange)
-        {
-            _dbContext = dbContext;
-            _dbSet = _dbContext.Set<T>();
-            _autoSaveChange = autoSaveChange;
         }
         #endregion
 
@@ -31,10 +25,6 @@ namespace DAL
         public virtual void Insert(T entity)
         {
             _dbSet.Add(entity);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-            }
         }
 
         public virtual IQueryable<T> Get(Expression<Func<T, bool>> filter = null, string includeProperties = "")
@@ -79,11 +69,7 @@ namespace DAL
         public virtual void Update(T entity)
         {
             _dbSet.Attach(entity);
-            _dbContext.Entry(entity).State = EntityState.Modified;
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-            }
+            _dbContext.Entry(entity).State = EntityState.Modified;   // for confirm state of entity is Modified -> _dbSet update state entity.         
         }
 
         public virtual void Update(object primaryKey, T entity)
@@ -92,27 +78,19 @@ namespace DAL
             this.Update(dbEntity);
         }
 
-        public virtual void Delete(object id)
+        public virtual void Delete(object primaryKey)
         {
-            T entity = _dbSet.Find(id);
+            T entity = _dbSet.Find(primaryKey);
             Delete(entity);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-            }
         }
 
         public virtual void Delete(T entityToDelete)
         {
-            if (_dbContext.Entry(entityToDelete).State == EntityState.Detached)
+            if (_dbContext.Entry(entityToDelete).State == EntityState.Detached) // check while processing server if entity modified -> attach entity into _dbSet again.
             {
                 _dbSet.Attach(entityToDelete);
             }
             _dbSet.Remove(entityToDelete);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-            }
         }
         public virtual void Delete(Expression<Func<T, bool>> filter)
         {

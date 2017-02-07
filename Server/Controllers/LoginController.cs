@@ -45,5 +45,17 @@ namespace Server.Controllers
         {
             return _loginService.Get(n => n.Username.ToLower().Equals(username.ToLower())).ToList();
         }
+        [HttpPost]
+        public string Delete(string username)
+        {
+            _loginService.Delete(n => n.Username.Contains(username));
+            return username;
+        }
+        [HttpPost]
+        public long DeleteV1(long id)
+        {
+            _loginService.Delete(id);
+            return id;
+        }
     }
 }

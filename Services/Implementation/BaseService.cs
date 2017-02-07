@@ -1,6 +1,7 @@
 ﻿using DAL;
 using Services.Interface;
 using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -12,11 +13,18 @@ namespace Services.Implementation
 
         private readonly IBaseRepository<T> _repo;
         private readonly IUnitOfWork _unitOfWork;
+        protected bool _autoSaveChange = true;
+        protected DbContext _dbContext;
 
-        public BaseService(IUnitOfWork unitOfWork)
+        public BaseService(IUnitOfWork unitOfWork, bool? autoSaveChange = true)
         {
             _unitOfWork = unitOfWork;
             _repo = unitOfWork.GetRepository<T>();
+            _dbContext = unitOfWork.GetDbContext();
+            if (autoSaveChange.HasValue)
+            {
+                _autoSaveChange = autoSaveChange.Value;
+            }
         }
 
         /// <summary>
@@ -31,20 +39,6 @@ namespace Services.Implementation
 
         #region BaseRepository
 
-        public void Delete(object primaryKey)
-        {
-            _repo.Delete(primaryKey);
-        }
-
-        public void Delete(T o)
-        {
-            _repo.Delete(o);
-        }
-        public void Delete(Expression<Func<T, bool>> filter)
-        {
-            _repo.Delete(filter);
-        }
-        
         public IQueryable<T> Get(Expression<Func<T, bool>> filter = null, string includeProperties = "")
         {
             return _repo.Get(filter, includeProperties);
@@ -63,19 +57,59 @@ namespace Services.Implementation
         public void Insert(T o)
         {
             _repo.Insert(o);
+            if (_autoSaveChange)
+            {
+                _dbContext.SaveChanges();
+            }
         }
 
         public void Update(T o)
         {
             _repo.Update(o);
+            if (_autoSaveChange)
+            {
+                _dbContext.SaveChanges();
+            }
         }
 
         public void Update(object primaryKey, T o)
         {
             _repo.Update(primaryKey, o);
+            if (_autoSaveChange)
+            {
+                _dbContext.SaveChanges();
+            }
+        }
+
+        public void Delete(object primaryKey)
+        {
+            _repo.Delete(primaryKey);
+            if (_autoSaveChange)
+            {
+                _dbContext.SaveChanges();
+            }
+        }
+
+        public void Delete(T o)
+        {
+            _repo.Delete(o);
+            if (_autoSaveChange)
+            {
+                _dbContext.SaveChanges();
+            }
+        }
+
+        public void Delete(Expression<Func<T, bool>> filter)
+        {
+            _repo.Delete(filter);
+            if (_autoSaveChange)
+            {
+                _dbContext.SaveChanges();
+            }
         }
 
         #endregion BaseRepository
+
         public IQueryable<T> GetWithPaging(Expression<Func<T, bool>> filter = null, string includeProperties = "", int take = default(int), int skip = default(int))
         {
             IQueryable<T> query = _repo.Get(filter, includeProperties);

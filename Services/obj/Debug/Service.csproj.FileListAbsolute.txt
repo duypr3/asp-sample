@@ -20,3 +20,6 @@ D:\Project\GitHub\asp-sample\Services\bin\Debug\EntityFramework.xml
 D:\Project\GitHub\asp-sample\Services\obj\Debug\Service.csprojResolveAssemblyReference.cache
 D:\Project\GitHub\asp-sample\Services\obj\Debug\Services.dll
 D:\Project\GitHub\asp-sample\Services\obj\Debug\Services.pdb
+D:\Project\GitHub\asp-sample\Services\bin\Debug\Services.dll.config
+D:\Project\GitHub\asp-sample\Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\GitHub\asp-sample\Services\bin\Debug\EntityFramework.SqlServer.xml

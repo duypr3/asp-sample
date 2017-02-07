@@ -47,7 +47,10 @@ namespace DAL
 
             return null;
         }
-
+        public DbContext GetDbContext()
+        {
+            return _dbContext;
+        }
         #endregion Repositories
 
         //#region Dispose
