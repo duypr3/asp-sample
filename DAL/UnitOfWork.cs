@@ -81,5 +81,40 @@ namespace DAL
         //}
 
         //#endregion Dispose
+
+        /* Dispose Repository ???????????????????///
+         public void Commit()
+        {
+            try
+            {
+                if (_transaction != null && _transaction.IsActive)
+                    _transaction.Commit();
+            }
+            catch 
+            {
+                if (_transaction != null && _transaction.IsActive)
+                    _transaction.Rollback();
+
+                throw;
+            }
+            finally
+            {
+                Session.Dispose();
+            }
+        }
+
+        public void Rollback()
+        {
+            try
+            {
+                if (_transaction != null && _transaction.IsActive)
+                    _transaction.Rollback();
+            }
+            finally
+            {
+                Session.Dispose();
+            }
+        }
+         */
     }
 }
