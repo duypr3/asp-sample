@@ -4,16 +4,14 @@ using System.Data.Entity;
 
 namespace DAL
 {
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
         #region Init
 
         private DbContext _dbContext;
-        private readonly IDbContextFactory _contextFactory;
 
         public UnitOfWork(IDbContextFactory contextFactory)
         {
-            _contextFactory = contextFactory;
             _dbContext = contextFactory.GetDefaultDbContext();
         }
 
@@ -55,30 +53,25 @@ namespace DAL
 
         //#region Dispose
 
-        ///// <summary>
-        ///// Disposes the current object
-        ///// </summary>
-        //public void Dispose()
-        //{
-        //    Dispose(true);
-        //    GC.SuppressFinalize(this);
-        //}
+        private bool disposed = false;
 
-        ///// <summary>
-        ///// Disposes all external resources.
-        ///// </summary>
-        ///// <param name="disposing">The dispose indicator.</param>
-        //private void Dispose(bool disposing)
-        //{
-        //    if (disposing)
-        //    {
-        //        if (_dbContext != null)
-        //        {
-        //            _dbContext.Dispose();
-        //            _dbContext = null;
-        //        }
-        //    }
-        //}
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _dbContext.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
 
         //#endregion Dispose
 
