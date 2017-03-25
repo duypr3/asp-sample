@@ -7,8 +7,8 @@ namespace Entity
     {
         public DefaultDbContext() : base("DefaultConnection")
         {
-            this.Configuration.LazyLoadingEnabled = false;
-            //this.Configuration.AutoDetectChangesEnabled = false;
+            this.Configuration.LazyLoadingEnabled = true;
+            this.Configuration.AutoDetectChangesEnabled = true;
         }
 
         public DbSet<Student> Students { set; get; }

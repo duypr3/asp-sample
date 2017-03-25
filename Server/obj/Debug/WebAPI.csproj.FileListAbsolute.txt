@@ -195,3 +195,6 @@ D:\Project\GitHub\asp-sample\Server\bin\System.Web.Cors.dll
 D:\Project\GitHub\asp-sample\Server\bin\System.Web.Http.Cors.dll
 D:\Project\GitHub\asp-sample\Server\bin\Microsoft.Owin.Cors.xml
 D:\Project\GitHub\asp-sample\Server\bin\System.Web.Http.Cors.xml
+D:\Project\GitHub\asp-sample\Server\bin\DAL.dll.config
+D:\Project\GitHub\asp-sample\Server\bin\Entity.dll.config
+D:\Project\GitHub\asp-sample\Server\bin\Services.dll.config

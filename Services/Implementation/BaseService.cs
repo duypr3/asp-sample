@@ -69,6 +69,7 @@ namespace Services.Implementation
             if (_autoSaveChange)
             {
                 _dbContext.SaveChanges();
+                //_unitOfWork.Dispose();
             }
         }
 
@@ -78,6 +79,7 @@ namespace Services.Implementation
             if (_autoSaveChange)
             {
                 _dbContext.SaveChanges();
+                _unitOfWork.Dispose();
             }
         }
 

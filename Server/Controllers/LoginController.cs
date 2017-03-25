@@ -29,11 +29,24 @@ namespace Server.Controllers
             return lg;
         }
         [HttpPost]
-        public Login AddOrUpdateV1(Login login)
+        public Login CreateAccount(Login login)
         {            
             _loginService.Insert(login);
 
             return login;
+        }
+
+        [HttpPost]
+        public Login CreateAccountWithParams(Login login, int param1, string param2)
+        {
+            _loginService.Insert(login);
+
+            return login;
+        }
+        [HttpGet]
+        public IList<Login> GetWithParams(string username, string password)
+        {
+            return _loginService.GetAll().ToList();
         }
         [HttpGet]
         public IList<Login> GetAll()

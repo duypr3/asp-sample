@@ -23,3 +23,5 @@ D:\Project\GitHub\asp-sample\Services\obj\Debug\Services.pdb
 D:\Project\GitHub\asp-sample\Services\bin\Debug\Services.dll.config
 D:\Project\GitHub\asp-sample\Services\bin\Debug\EntityFramework.SqlServer.dll
 D:\Project\GitHub\asp-sample\Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\GitHub\asp-sample\Services\bin\Debug\DAL.dll.config
+D:\Project\GitHub\asp-sample\Services\bin\Debug\Entity.dll.config

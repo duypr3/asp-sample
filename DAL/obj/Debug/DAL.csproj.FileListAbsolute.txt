@@ -22,3 +22,4 @@ D:\Project\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.dll
 D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.pdb
+D:\Project\GitHub\asp-sample\DAL\bin\Debug\Entity.dll.config
