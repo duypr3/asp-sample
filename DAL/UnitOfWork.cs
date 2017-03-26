@@ -4,7 +4,7 @@ using System.Data.Entity;
 
 namespace DAL
 {
-    public class UnitOfWork : IUnitOfWork, IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
         #region Init
 
@@ -53,7 +53,7 @@ namespace DAL
 
         //#region Dispose
 
-        private bool disposed = false;
+        /*private bool disposed = false;
 
         protected virtual void Dispose(bool disposing)
         {
@@ -71,7 +71,7 @@ namespace DAL
         {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
+        }*/
 
         //#endregion Dispose
 

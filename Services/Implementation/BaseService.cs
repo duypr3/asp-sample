@@ -12,33 +12,16 @@ namespace Services.Implementation
         #region init
 
         private readonly IBaseRepository<T> _repo;
-        private readonly IUnitOfWork _unitOfWork;
         protected bool _autoSaveChange = true;
-        protected DbContext _dbContext;
-
-        public BaseService(IUnitOfWork unitOfWork, bool? autoSaveChange = true)
+      
+        public BaseService(IBaseRepository<T> repo)
         {
-            _unitOfWork = unitOfWork;
-            _repo = unitOfWork.GetRepository<T>();
-            _dbContext = unitOfWork.GetDbContext();
-            if (autoSaveChange.HasValue)
-            {
-                _autoSaveChange = autoSaveChange.Value;
-            }
-        }
-
-        /// <summary>
-        /// For get Repository
-        /// </summary>
-        public IUnitOfWork UnitOfWork
-        {
-            get { return _unitOfWork; }
+            _repo = repo;
         }
 
         #endregion init
 
         #region BaseRepository
-
         public IQueryable<T> Get(Expression<Func<T, bool>> filter = null, string includeProperties = "")
         {
             return _repo.Get(filter, includeProperties);
@@ -56,58 +39,32 @@ namespace Services.Implementation
 
         public void Insert(T o)
         {
-            _repo.Insert(o);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-            }
+            _repo.Insert(o);           
         }
 
         public void Update(T o)
         {
-            _repo.Update(o);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-                //_unitOfWork.Dispose();
-            }
+            _repo.Update(o);           
         }
 
         public void Update(object primaryKey, T o)
         {
-            _repo.Update(primaryKey, o);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-                _unitOfWork.Dispose();
-            }
+            _repo.Update(primaryKey, o);            
         }
 
         public void Delete(object primaryKey)
         {
-            _repo.Delete(primaryKey);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-            }
+            _repo.Delete(primaryKey);            
         }
 
         public void Delete(T o)
         {
-            _repo.Delete(o);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-            }
+            _repo.Delete(o);           
         }
 
         public void Delete(Expression<Func<T, bool>> filter)
         {
-            _repo.Delete(filter);
-            if (_autoSaveChange)
-            {
-                _dbContext.SaveChanges();
-            }
+            _repo.Delete(filter);            
         }
 
         #endregion BaseRepository

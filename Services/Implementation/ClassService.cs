@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Services.Implementation
 {
-    public class ClassService : BaseService<Class>, IClassService
+    /*public class ClassService : BaseService<Class>, IClassService
     {
         private readonly IBaseRepository<Class> _classRepo;
         public ClassService(IUnitOfWork unitOfWork) : base(unitOfWork)
@@ -24,5 +24,5 @@ namespace Services.Implementation
         {
             return _classRepo.Get(n => n.Name == name).FirstOrDefault();
         }
-    }
+    }*/
 }

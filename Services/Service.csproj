@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementation\BaseService.cs" />
+    <Compile Include="Implementation\BaseService_Old.cs" />
     <Compile Include="Implementation\ClassService.cs" />
     <Compile Include="Implementation\LoginService.cs" />
     <Compile Include="Implementation\StudentService.cs" />

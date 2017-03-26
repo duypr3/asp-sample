@@ -25,6 +25,7 @@ namespace DAL
         public virtual void Insert(T entity)
         {
             _dbSet.Add(entity);
+            _dbContext.SaveChanges();
         }
 
         public virtual IQueryable<T> Get(Expression<Func<T, bool>> filter = null, string includeProperties = "")
@@ -102,5 +103,6 @@ namespace DAL
         }
 
         #endregion
+
     }
 }

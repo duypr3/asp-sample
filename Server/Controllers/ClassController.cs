@@ -15,12 +15,12 @@ namespace Server.Controllers
         {
             _classService = classService;
         }
-        [HttpGet]
+        /*[HttpGet]
         public Class GetByID(long id)
         {
            var result = _classService.Get(null,"Students").FirstOrDefault();
 
             return result;
-        }
+        }*/
     }
 }

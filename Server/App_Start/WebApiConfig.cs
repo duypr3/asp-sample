@@ -1,4 +1,5 @@
 ﻿using DAL;
+using DAL.Repository;
 using DryIoc;
 using DryIoc.WebApi;
 using Microsoft.Owin.Security.OAuth;
@@ -23,14 +24,19 @@ namespace Server
             //        scopeContext: new AsyncExecutionFlowScopeContext()).WithWebApi(config);
 
             var container = new Container(
-                    rules => rules.With(FactoryMethod.ConstructorWithResolvableArguments)).WithWebApi(config);
+                    rules => rules.With(FactoryMethod.ConstructorWithResolvableArguments)
+                    ).WithWebApi(config);
+                                   
+                          
             //scopeContext: new AsyncExecutionFlowScopeContext()).WithWebApi(config);
 
             container.Register<IDbContextFactory, DbContextFactory>(Reuse.Singleton);
             container.Register<IUnitOfWork, UnitOfWork>(Reuse.Singleton);
-
-            container.RegisterMany(new[] { typeof(StudentService).Assembly }, nonPublicServiceTypes: true);
-
+            container.Register<ILoginRepository, LoginRepository>(Reuse.Singleton);
+            container.Register<ILoginService, LoginService>(Reuse.Singleton);
+            container.RegisterMany(new[] { typeof(LoginRepository).Assembly }, nonPublicServiceTypes: true);
+            container.RegisterMany(new[] { typeof(LoginService).Assembly }, nonPublicServiceTypes: true);
+            
             //container.Register<IUnitOfWork, UnitOfWork>(made: Made.Of(FactoryMethod.ConstructorWithResolvableArguments));
             //container.Register<IStudentService, StudentService>(made: Made.Of(FactoryMethod.ConstructorWithResolvableArguments));
             //container.RegisterMany<UnitOfWork>(serviceTypeCondition: type => type.IsInterface);

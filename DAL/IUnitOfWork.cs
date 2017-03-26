@@ -11,6 +11,5 @@ namespace DAL
     {
         DbContext GetDbContext();
         IBaseRepository<T> GetRepository<T>();
-        void Dispose();
     }
 }

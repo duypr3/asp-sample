@@ -3,3 +3,8 @@ C:\Users\NO_NAME\Google Drive\Project\SampleTest\Client\bin\Debug\Client.pdb
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Client\obj\Debug\Client.dll
 C:\Users\NO_NAME\Google Drive\Project\SampleTest\Client\obj\Debug\Client.pdb
+D:\Project\GitHub\asp-sample\Client\bin\Debug\Client.dll
+D:\Project\GitHub\asp-sample\Client\bin\Debug\Client.pdb
+D:\Project\GitHub\asp-sample\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\Project\GitHub\asp-sample\Client\obj\Debug\Client.dll
+D:\Project\GitHub\asp-sample\Client\obj\Debug\Client.pdb

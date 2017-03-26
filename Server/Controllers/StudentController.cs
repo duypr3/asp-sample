@@ -12,7 +12,7 @@ namespace Server.Controllers
     {
         private readonly IStudentService _studentService;
         private readonly IClassService _classService;
-        public StudentController(IStudentService studenService, IClassService classService)
+       /* public StudentController(IStudentService studenService, IClassService classService)
         {
             _studentService = studenService;
             _classService = classService;
@@ -24,6 +24,6 @@ namespace Server.Controllers
         public Student GetStudentByID(long id)
         {
             return _studentService.GetByID(id);
-        }
+        }*/
     }
 }
