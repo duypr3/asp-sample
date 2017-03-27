@@ -73,6 +73,6 @@ namespace Services.Implementation
         {
             IQueryable<T> query = _repo.Get(filter, includeProperties);
             return query.Take(take).Skip(skip);
-        }
+        }       
     }
 }
