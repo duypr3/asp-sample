@@ -23,3 +23,16 @@ D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.ca
 D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.dll
 D:\Project\GitHub\asp-sample\DAL\obj\Debug\DAL.pdb
 D:\Project\GitHub\asp-sample\DAL\bin\Debug\Entity.dll.config
+D:\GitHub\asp-sample\DAL\bin\Debug\DAL.dll.config
+D:\GitHub\asp-sample\DAL\bin\Debug\DAL.dll
+D:\GitHub\asp-sample\DAL\bin\Debug\DAL.pdb
+D:\GitHub\asp-sample\DAL\bin\Debug\Entity.dll
+D:\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.dll
+D:\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\asp-sample\DAL\bin\Debug\Entity.pdb
+D:\GitHub\asp-sample\DAL\bin\Debug\Entity.dll.config
+D:\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.xml
+D:\GitHub\asp-sample\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\asp-sample\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\GitHub\asp-sample\DAL\obj\Debug\DAL.dll
+D:\GitHub\asp-sample\DAL\obj\Debug\DAL.pdb

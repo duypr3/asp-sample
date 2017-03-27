@@ -26,10 +26,10 @@ namespace Server
                     rules => rules.With(FactoryMethod.ConstructorWithResolvableArguments)).WithWebApi(config);
             //scopeContext: new AsyncExecutionFlowScopeContext()).WithWebApi(config);
 
-            container.Register<IDbContextFactory, DbContextFactory>(Reuse.Singleton);
-            container.Register<IUnitOfWork, UnitOfWork>(Reuse.Singleton);
+            container.Register<IDbContextFactory, DbContextFactory>(Reuse.Transient);
+            container.Register<IUnitOfWork, UnitOfWork>(Reuse.Transient);
 
-            container.RegisterMany(new[] { typeof(StudentService).Assembly }, nonPublicServiceTypes: true);
+            container.RegisterMany(new[] { typeof(StudentService).Assembly}, nonPublicServiceTypes: true);
 
             //container.Register<IUnitOfWork, UnitOfWork>(made: Made.Of(FactoryMethod.ConstructorWithResolvableArguments));
             //container.Register<IStudentService, StudentService>(made: Made.Of(FactoryMethod.ConstructorWithResolvableArguments));
