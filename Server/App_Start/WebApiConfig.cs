@@ -31,11 +31,12 @@ namespace Server
             //scopeContext: new AsyncExecutionFlowScopeContext()).WithWebApi(config);
 
             container.Register<IDbContextFactory, DbContextFactory>(Reuse.Singleton);
-            container.Register<IUnitOfWork, UnitOfWork>(Reuse.Singleton);
-            container.Register<ILoginRepository, LoginRepository>(Reuse.Singleton);
-            container.Register<ILoginService, LoginService>(Reuse.Singleton);
-            container.RegisterMany(new[] { typeof(LoginRepository).Assembly }, nonPublicServiceTypes: true);
-            container.RegisterMany(new[] { typeof(LoginService).Assembly }, nonPublicServiceTypes: true);
+           // container.Register<IUnitOfWork, UnitOfWork>(Reuse.Singleton);
+            container.Register<ILoginRepository, LoginRepository>(Reuse.Transient);
+            container.Register<ILoginService, LoginService>(Reuse.Transient);
+
+           /* container.RegisterMany(new[] { typeof(LoginRepository).Assembly }, nonPublicServiceTypes: true);
+            container.RegisterMany(new[] { typeof(LoginService).Assembly }, nonPublicServiceTypes: true);*/
             
             //container.Register<IUnitOfWork, UnitOfWork>(made: Made.Of(FactoryMethod.ConstructorWithResolvableArguments));
             //container.Register<IStudentService, StudentService>(made: Made.Of(FactoryMethod.ConstructorWithResolvableArguments));

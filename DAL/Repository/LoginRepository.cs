@@ -9,7 +9,7 @@ namespace DAL.Repository
     }
     public class LoginRepository : BaseRepository<Login>, ILoginRepository
     {
-        public LoginRepository(IDbContextFactory dbContextFactory) : base(new DbContextFactory().GetDefaultDbContext())
+        public LoginRepository(IDbContextFactory dbContextFactory) : base(dbContextFactory.GetDefaultDbContext())
         {
 
         }

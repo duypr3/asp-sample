@@ -12,15 +12,15 @@ namespace DAL
     {
         protected DbContext _defaultDbContext;
         protected DbContext _dataMiningDbContext;
-        /*public DbContextFactory()
+        public DbContextFactory()
         {
-            _defaultDbContext = _defaultDbContext ?? new DefaultDbContext();
-        }*/
+            _defaultDbContext = new DefaultDbContext();
+        }
 
         public DbContext GetDefaultDbContext()
         {
             //return _defaultDbContext ?? (_defaultDbContext = new DefaultDbContext());
-            return new DefaultDbContext();
+            return _defaultDbContext;
         }
         public DbContext GetDataMiningDbContext()
         {
